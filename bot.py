@@ -21,10 +21,10 @@ ADMIN_IDS    = [int(x.strip()) for x in os.environ.get("ADMIN_IDS", "").split(",
 MINI_APP_URL = os.environ.get("MINI_APP_URL", "")
 GROUP_ID     = os.environ.get("GROUP_ID", "")   # optional: add group numeric ID in Railway
 
-CHANNEL_LINK  = "https://t.me/freelancebazar"
-GROUP_LINK    = "https://t.me/+fag7r8JXLwsyZTI9"
-WEBSITE_LINK  = "https://t.me/gmail_creato_rbot"
-ADMIN_CONTACT = "https://t.me/gmail_creato_rbot"
+CHANNEL_LINK  = os.environ.get("CHANNEL_LINK",  "https://t.me/freelancebazar")
+GROUP_LINK    = os.environ.get("GROUP_LINK",    "https://t.me/+fag7r8JXLwsyZTI9")
+WEBSITE_LINK  = os.environ.get("WEBSITE_LINK",  "https://t.me/gmail_creato_rbot")
+ADMIN_CONTACT = os.environ.get("ADMIN_CONTACT", "https://t.me/gmail_creato_rbot")
 
 DB_NAME             = "referral_bot"
 REFERRAL_REWARD_INR = 5.00
